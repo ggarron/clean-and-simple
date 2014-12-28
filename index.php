@@ -5,7 +5,7 @@
 	<div class="row clearfix">
 		<div class="col-md-12 column">
 			<h1 class="text-center">
-                <?php bloginfo( 'name' ); ?>
+                <a href="<?php get_home_url(); ?>"><?php bloginfo( 'name' ); ?></a>
             </h1>
             <h2 class="text-center">
                 <?php bloginfo( 'description' ); ?>
