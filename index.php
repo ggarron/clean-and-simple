@@ -13,7 +13,8 @@
 		</div>
 	</div>
 	<div class="row clearfix">
-		<div class="col-md-12 column">
+        <div class="col-md-3 column"></div>
+		<div class="col-md-6 column">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <h4><center><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></center></h4>
             <hr>
@@ -27,6 +28,7 @@
             <?php _e('Sorry, no posts matched your criteria.'); ?>
             <?php endif; ?>
 		</div>
+        <div class="col-md-3 column"></div>
 	</div>
     
 <?php get_footer(); ?>
