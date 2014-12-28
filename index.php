@@ -16,7 +16,7 @@
         <div class="col-md-3 column"></div>
 		<div class="col-md-6 column">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <h3><center><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></center></h3>
+            <h3><center><?php the_title(); ?></center></h3>
             <small><p>Categories: <?php the_category( ', ' ); ?></p></small>
             <small><p><?php the_tags(); ?></p></small>
             <hr>
