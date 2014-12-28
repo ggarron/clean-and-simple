@@ -1,6 +1,6 @@
 <?php
 function child_scripts_styles() {
-    wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css', array(), '0.4' );
+    wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css', array(), '0.5' );
 }
 add_action( 'wp_enqueue_scripts', 'child_scripts_styles' );
 
