@@ -16,11 +16,9 @@
         <div class="col-md-3 column"></div>
 		<div class="col-md-6 column">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <h4><center><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></center></h4>
-            <hr>
+            <h3><center><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></center></h3>
             <small><p>Categories: <?php the_category( ' &bull; ' ); ?></p></small>
-            <hr>
-            <small>Tags: <?php the_tags( 'Tagged with: ', ' • ', '<br />' ); ?></small>
+            <small><p>Tags: <?php the_tags( 'Tagged with: ', ' • ', '<br />' ); ?></p></small>
             <hr>
             <p><?php the_content('Read more ...'); ?></p>
             <p><?php wp_link_pages(); ?></p>
