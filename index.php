@@ -6,7 +6,7 @@
 		<div class="col-md-12 column">
 			<h1 class="text-center">
                 <?php if ( is_singular() ): ?>
-                        <a href="<?php echo site_url('/'); ?>"><?php bloginfo( 'name' ); ?></a>
+                    <a href="<?php echo site_url('/'); ?>"><?php bloginfo( 'name' ); ?></a>
                 <?php else: ?>
                     <?php bloginfo( 'name' ); ?>
                 <?php endif ?>
@@ -20,12 +20,11 @@
         <div class="col-md-3 column"></div>
 		<div class="col-md-6 column">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <?php
-                    if ( is_singular() ) {
-                        <h3><center><?php the_title(); ?></center></h3> }
-                    else {
-                        <h3><center><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></center></h3> }
-            ?>
+            <?php if ( is_singular() ): ?> 
+                    <h3><center><?php the_title(); ?></center></h3>
+            <?php else: ?>
+                    <h3><center><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></center></h3>
+            <?php endif ?>
             <small><p>Categories: <?php the_category( ', ' ); ?></p></small>
             <small><p><?php the_tags(); ?></p></small>
             <hr>
