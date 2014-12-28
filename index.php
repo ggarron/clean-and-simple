@@ -5,7 +5,7 @@
 	<div class="row clearfix">
 		<div class="col-md-12 column">
 			<h1 class="text-center">
-                <a href="<?php echo get_home_url(); ?>"><?php bloginfo( 'name' ); ?></a>
+                <?php bloginfo( 'name' ); ?>
             </h1>
             <h2 class="text-center">
                 <?php bloginfo( 'description' ); ?>
@@ -15,29 +15,16 @@
 	<div class="row clearfix">
 		<div class="col-md-12 column">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
- 
-            <h3><?php the_title(); ?></h3>
- 
-            <?php the_content(); ?>
-            <?php wp_link_pages(); ?>
- 
-            <?php endwhile; ?>
- 
-            <?php
-                if ( get_next_posts_link() ) {
-                    next_posts_link();
-                }
-            ?>
-            <?php
-                if ( get_previous_posts_link() ) {
-                    previous_posts_link();
-                }
-            ?>
- 
-            <?php else: ?>
- 
-                <p>No posts found. :(</p>
- 
+            <h4><center><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></center></h4>
+            <hr>
+            <small><p>Categories: <?php the_category( ' &bull; ' ); ?></p></small>
+            <hr>
+            <small>Tags: <?php the_tags( 'Tagged with: ', ' • ', '<br />' ); ?></small>
+            <hr>
+            <p><?php the_content('Read more ...'); ?></p>
+            <p><?php wp_link_pages(); ?></p>
+            <?php endwhile; else: ?>
+            <?php _e('Sorry, no posts matched your criteria.'); ?>
             <?php endif; ?>
 		</div>
 	</div>

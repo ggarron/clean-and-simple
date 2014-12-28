@@ -22,6 +22,7 @@
             <small>Tags: <?php the_tags( 'Tagged with: ', ' • ', '<br />' ); ?></small>
             <hr>
             <p><?php the_content('Read more ...'); ?></p>
+            <p><?php wp_link_pages(); ?></p>
             <?php endwhile; else: ?>
             <?php _e('Sorry, no posts matched your criteria.'); ?>
             <?php endif; ?>
