@@ -23,23 +23,6 @@
             <?php endwhile; else: ?>
             <?php _e('Sorry, no posts matched your criteria.'); ?>
             <?php endif; ?>
- 
-            <?php
-                if ( get_next_posts_link() ) {
-                    next_posts_link();
-                }
-            ?>
-            <?php
-                if ( get_previous_posts_link() ) {
-                    previous_posts_link();
-                }
-            ?>
- 
-            <?php else: ?>
- 
-                <p>No posts found. :(</p>
- 
-            <?php endif; ?>
 		</div>
 	</div>
     
