@@ -9,7 +9,7 @@
                         <a href="<?php echo site_url('/'); ?>"><?php bloginfo( 'name' ); ?></a>
                 <?php else: ?>
                     <?php bloginfo( 'name' ); ?>
-                <? php endif ?>
+                <?php endif ?>
             </h1>
             <h2 class="text-center">
                 <?php bloginfo( 'description' ); ?>
