@@ -1,4 +1,4 @@
-<?php get_header( $name ); ?>
+<?php get_header(); ?>
 
 <body>
 <div class="container">
@@ -42,11 +42,5 @@
             <?php endif; ?>
 		</div>
 	</div>
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-            <?php wp_footer(); ?>
-		</div>
-	</div>
-</div>
-</body>
-</html>
+    
+<?php get_footer(); ?>
