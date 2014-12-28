@@ -17,7 +17,7 @@
 		</div>
 	</div>
 	<div class="row clearfix">
-        <div class="col-md-3 column grey-bg"></div>
+        <div class="col-md-3 column"></div>
 		<div class="col-md-6 column">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <?php if ( is_singular() ): ?> 
@@ -34,7 +34,7 @@
             <?php _e('Sorry, no posts matched your criteria.'); ?>
             <?php endif; ?>
 		</div>
-        <div class="col-md-3 column grey-bg"></div>
+        <div class="col-md-3 column"></div>
 	</div>
     
 <?php get_footer(); ?>
