@@ -5,10 +5,10 @@
 	<div class="row clearfix">
 		<div class="col-md-12 column">
 			<h1 class="text-center">
-                <?php if ( is_singular() ): ?>
-                    <a href="<?php echo site_url('/'); ?>"><?php bloginfo( 'name' ); ?></a>
-                <?php else: ?>
+                <?php if ( is_front_page() ): ?>
                     <?php bloginfo( 'name' ); ?>
+                <?php else: ?>
+                    <a href="<?php echo site_url('/'); ?>"><?php bloginfo( 'name' ); ?></a>
                 <?php endif ?>
             </h1>
             <h2 class="text-center">
