@@ -11,3 +11,13 @@ Text Domain: bootstrap-clean-simple
 Domain Path: /languages/
 Tags: minimalist, blog, one-column
 */
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans);
+h1,
+h2,
+h3,
+h4,
+h5 {font-family: 'Josefin Slab', serif;}
+p,
+small,
+strong,
+em {font-family: 'Open Sans', sans-serif;}
