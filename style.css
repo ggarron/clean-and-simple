@@ -21,3 +21,7 @@ p,
 small,
 strong,
 em {font-family: 'Open Sans', sans-serif;}
+
+.grey-bg {
+    background-color: #808080;
+}
