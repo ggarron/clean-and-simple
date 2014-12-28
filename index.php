@@ -5,11 +5,11 @@
 	<div class="row clearfix">
 		<div class="col-md-12 column">
 			<h1 class="text-center">
-                <?php if ( is_singular() ); ?>
+                <?php if ( is_singular() ): ?>
                         <a href="<?php echo site_url('/'); ?>"><?php bloginfo( 'name' ); ?></a>
-                <?php else; ?>
+                <?php else: ?>
                     <?php bloginfo( 'name' ); ?>
-                <? php endif; ?>
+                <? php endif ?>
             </h1>
             <h2 class="text-center">
                 <?php bloginfo( 'description' ); ?>
