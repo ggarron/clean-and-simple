@@ -3,7 +3,7 @@
 remove_action('wp_head', 'feed_links_extra', 3 );
 remove_action('wp_head', 'rsd_link');
 
-load_theme_textdomain('clean-and-simple');
+load_theme_textdomain( 'clean-and-simple', get_template_directory().'/languages' );
 
 function child_scripts_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css', array(), '0.5.2' );
