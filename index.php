@@ -30,9 +30,9 @@
             <hr>
             <p><?php the_content('Read more ...'); ?></p>
             <p><?php wp_link_pages(); ?></p>
-	        <p><a class="btn btn-info btn-xs" href="http://twitter.com/intent/tweet?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>"><i class="fa fa-twitter"> Tweet it</i></a> | <a class="btn btn-info btn-xs" href="http://facebook.com/sharer.php?u=<?php the_permalink(); ?>"><i class="fa fa-facebook"> Share it</i></a></p>
+	        <p><a class="btn btn-info btn-xs" href="http://twitter.com/intent/tweet?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>"><i class="fa fa-twitter"> <?php _e('Tweet it', 'clean-and-simple'); ?></i></a> | <a class="btn btn-info btn-xs" href="http://facebook.com/sharer.php?u=<?php the_permalink(); ?>"><i class="fa fa-facebook"> <?php _e('Share it', 'clean-and-simple'); ?></i></a></p>
             <?php endwhile; else: ?>
-            <?php _e('Sorry, no posts matched your criteria.'); ?>
+            <?php _e('Sorry, no posts matched your criteria.', 'clean-and-simple'); ?>
             <?php endif; ?>
 		</div>
         <div class="col-md-2 column"></div>
