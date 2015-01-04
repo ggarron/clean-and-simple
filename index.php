@@ -30,7 +30,7 @@
             <hr>
             <p><?php the_content('Read more ...'); ?></p>
             <p><?php wp_link_pages(); ?></p>
-	    <p><a class="btn btn-block btn-social btn-twitter" href="http://twitter.com/intent/tweet?url=http://www.garron.me<?php the_permalink(); ?>&text=<?php the_title(); ?>"><i class="fa fa-twitter"></i></a></p>
+	    <p><a class="btn btn-social btn-twitter" href="http://twitter.com/intent/tweet?url=http://www.garron.me<?php the_permalink(); ?>&text=<?php the_title(); ?>"><i class="fa fa-twitter">Tweet it</i></a></p>
             <?php endwhile; else: ?>
             <?php _e('Sorry, no posts matched your criteria.'); ?>
             <?php endif; ?>
