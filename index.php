@@ -18,7 +18,7 @@
 	</div>
 	<div class="row clearfix">
         <div class="col-md-3 column"></div>
-		<div class="col-md-6 column">
+	<div class="col-md-6 column">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <?php if ( is_singular() ): ?> 
                     <h3><center><?php the_title(); ?></center></h3>
@@ -30,6 +30,7 @@
             <hr>
             <p><?php the_content('Read more ...'); ?></p>
             <p><?php wp_link_pages(); ?></p>
+	    <p><a class="btn btn-block btn-social btn-twitter"><i class="fa fa-twitter" href="http://twitter.com/intent/tweet?url=http://www.garron.me<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=ggarron"></i> Sign in with Twitter</a></p>
             <?php endwhile; else: ?>
             <?php _e('Sorry, no posts matched your criteria.'); ?>
             <?php endif; ?>
