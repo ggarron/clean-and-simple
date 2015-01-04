@@ -25,7 +25,7 @@
             <?php else: ?>
                     <h3><center><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></center></h3>
             <?php endif ?>
-            <small><p>Categories: <?php the_category( ', ' ); ?></p></small>
+            <small><p><?php _e('Categories:', 'clean-and-simple'); ?><?php the_category( ', ' ); ?></p></small>
             <small><p><?php the_tags(); ?></p></small>
             <hr>
             <p><?php the_content('Read more ...'); ?></p>
