@@ -17,8 +17,8 @@
 		</div>
 	</div>
 	<div class="row clearfix">
-        <div class="col-md-3 column"></div>
-	<div class="col-md-6 column">
+        <div class="col-md-2 column"></div>
+	<div class="col-md-8 column">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <?php if ( is_singular() ): ?> 
                     <h3><center><?php the_title(); ?></center></h3>
@@ -30,12 +30,12 @@
             <hr>
             <p><?php the_content('Read more ...'); ?></p>
             <p><?php wp_link_pages(); ?></p>
-	    <p><a class="btn btn-info btn-xs" href="http://twitter.com/intent/tweet?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>"><i class="fa fa-twitter"> Tweet it</i></a> | <a class="btn btn-info btn-xs" href="http://facebook.com/sharer.php?u=<?php the_permalink(); ?>"><i class="fa fa-facebook"> Share it</i></a></p>
+	        <p><a class="btn btn-info btn-xs" href="http://twitter.com/intent/tweet?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>"><i class="fa fa-twitter"> Tweet it</i></a> | <a class="btn btn-info btn-xs" href="http://facebook.com/sharer.php?u=<?php the_permalink(); ?>"><i class="fa fa-facebook"> Share it</i></a></p>
             <?php endwhile; else: ?>
             <?php _e('Sorry, no posts matched your criteria.'); ?>
             <?php endif; ?>
 		</div>
-        <div class="col-md-3 column"></div>
+        <div class="col-md-2 column"></div>
 	</div>
     
 <?php get_footer(); ?>
